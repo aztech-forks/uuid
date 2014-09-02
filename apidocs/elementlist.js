@@ -1,0 +1,3 @@
+
+var ApiGen = ApiGen || {};
+ApiGen.elements = [["c","DateTime"],["c","ErrorException"],["c","Exception"],["c","InvalidArgumentException"],["c","LogicException"],["c","Rhumsaa\\Uuid\\Console\\Application"],["c","Rhumsaa\\Uuid\\Console\\Command\\DecodeCommand"],["c","Rhumsaa\\Uuid\\Console\\Command\\GenerateCommand"],["c","Rhumsaa\\Uuid\\Console\\Exception"],["c","Rhumsaa\\Uuid\\Console\\Util\\ErrorHandler"],["c","Rhumsaa\\Uuid\\Doctrine\\UuidType"],["c","Rhumsaa\\Uuid\\Exception\\UnsatisfiedDependencyException"],["c","Rhumsaa\\Uuid\\Exception\\UnsupportedOperationException"],["c","Rhumsaa\\Uuid\\Uuid"],["c","RuntimeException"]];

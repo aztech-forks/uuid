@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Rhumsaa\Uuid\Console\Util\ErrorHandler | Rhumsaa\Uuid</title>
+
+	<script type="text/javascript" src="resources/combined.js?2003274015"></script>
+	<script type="text/javascript" src="elementlist.js?1610031137"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Rhumsaa.html">Rhumsaa<span></span></a>
+						<ul>
+				<li class="active main"><a href="namespace-Rhumsaa.Uuid.html">Uuid<span></span></a>
+						<ul>
+				<li class="active main"><a href="namespace-Rhumsaa.Uuid.Console.html">Console<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Console.Command.html">Command</a>
+						</li>
+				<li class="active main"><a href="namespace-Rhumsaa.Uuid.Console.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Doctrine.html">Doctrine</a>
+						</li>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Exception.html">Exception</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Rhumsaa.Uuid.Console.Util.ErrorHandler.html">ErrorHandler</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Rhumsaa.Uuid.Console.Util.html" title="Summary of Rhumsaa\Uuid\Console\Util"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ErrorHandler</h1>
+
+
+	<div class="description">
+	
+<p>Convert PHP errors into exceptions</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Rhumsaa.html">Rhumsaa</a>\<a href="namespace-Rhumsaa.Uuid.html">Uuid</a>\<a href="namespace-Rhumsaa.Uuid.Console.html">Console</a>\<a href="namespace-Rhumsaa.Uuid.Console.Util.html">Util</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Rhumsaa.Uuid.Console.Util.ErrorHandler.html#14-49" title="Go to source code">Console/Util/ErrorHandler.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="handle" id="_handle">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_handle">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Console.Util.ErrorHandler.html#19-38" title="Go to source code">handle</a>( <span>integer <var>$level</var></span>, <span>string <var>$message</var></span>, <span>string <var>$file</var></span>, <span>integer <var>$line</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Error handler</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Error handler</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd><code>integer</code><br>$level Level of the error raised</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code><br>$message Error message</dd>
+					<dt><var>$file</var></dt>
+					<dd><code>string</code><br>$file Filename that the error was raised in</dd>
+					<dt><var>$line</var></dt>
+					<dd><code>integer</code><br>$line Line number the error was raised at</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-ErrorException.html">ErrorException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Console.Util.ErrorHandler.html#40-48" title="Go to source code">register</a>( )</code>
+
+		<div class="description short">
+			
+<p>Register error handler</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register error handler</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Rhumsaa\Uuid API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

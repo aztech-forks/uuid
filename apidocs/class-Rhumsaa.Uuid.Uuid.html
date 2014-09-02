@@ -1,0 +1,2799 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Rhumsaa\Uuid\Uuid | Rhumsaa\Uuid</title>
+
+	<script type="text/javascript" src="resources/combined.js?2003274015"></script>
+	<script type="text/javascript" src="elementlist.js?1610031137"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Rhumsaa.html">Rhumsaa<span></span></a>
+						<ul>
+				<li class="active main"><a href="namespace-Rhumsaa.Uuid.html">Uuid<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Console.html">Console<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Console.Command.html">Command</a>
+						</li>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Console.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Doctrine.html">Doctrine</a>
+						</li>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Exception.html">Exception</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Rhumsaa.Uuid.Uuid.html">Uuid</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Rhumsaa.Uuid.html" title="Summary of Rhumsaa\Uuid"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Uuid</h1>
+
+
+	<div class="description">
+	
+<p>Represents a universally unique identifier (UUID), according to RFC 4122</p>
+
+<p>This class provides immutable UUID objects (the Uuid class) and the static
+methods <code>uuid1()</code>, <code>uuid3()</code>, <code>uuid4()</code>, and
+<code>uuid5()</code> for generating version 1, 3, 4, and 5 UUIDs as specified in
+RFC 4122.</p>
+
+<p>If all you want is a unique ID, you should probably call <code>uuid1()</code>
+or <code>uuid4()</code>. Note that <code>uuid1()</code> may compromise privacy
+since it creates a UUID containing the computer’s network address.
+<code>uuid4()</code> creates a random UUID.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Final</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Rhumsaa.html">Rhumsaa</a>\<a href="namespace-Rhumsaa.Uuid.html">Uuid</a><br />
+		
+
+				<b>Link:</b>
+				<a href="http://tools.ietf.org/html/rfc4122">http://tools.ietf.org/html/rfc4122</a><br />
+				<b>Link:</b>
+				<a href="http://en.wikipedia.org/wiki/Universally_unique_identifier">http://en.wikipedia.org/wiki/Universally_unique_identifier</a><br />
+				<b>Link:</b>
+				<a href="http://docs.python.org/3/library/uuid.html">http://docs.python.org/3/library/uuid.html</a><br />
+				<b>Link:</b>
+				<a href="http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html">http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html</a><br />
+		<b>Located at</b> <a href="source-class-Rhumsaa.Uuid.Uuid.html#16-1234" title="Go to source code">Uuid.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#152-164" title="Go to source code">__construct</a>( <span>array <var>$fields</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates a universally unique identifier (UUID) from an array of fields.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates a universally unique identifier (UUID) from an array of fields.</p>
+
+<p>Protected to prevent direct instantiation. Use static methods to create
+UUIDs.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd><code>array</code><br>$fields</dd>
+				</dl></div>
+
+
+
+				<h4>Link</h4>
+				<div class="list">
+						Rhumsaa.Uuid.Uuid.html#method_getFields<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#166-176" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+<p>Converts this UUID object to a string when the object is used in any string
+context</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Converts this UUID object to a string when the object is used in any string
+context</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://www.php.net/manual/en/language.oop5.magic.php#object.tostring">http://www.php.net/manual/en/language.oop5.magic.php#object.tostring</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="compareTo" id="_compareTo">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_compareTo">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#178-208" title="Go to source code">compareTo</a>( <span><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code> <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compares this UUID with the specified UUID.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compares this UUID with the specified UUID.</p>
+
+<p>The first of two UUIDs is greater than the second if the most significant
+field in which the UUIDs differ is greater for the first UUID.</p>
+
+<p>Q. What's the value of being able to sort UUIDs?<br />
+A. Use them as keys in a B-Tree or similar mapping.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd><code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code></code><br>$uuid UUID to which this UUID is to be compared</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>-1, 0 or 1 as this UUID is less than, equal to, or greater than $uuid<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="equals" id="_equals">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_equals">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#210-227" title="Go to source code">equals</a>( <span>object <var>$obj</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compares this object to the specified object.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compares this object to the specified object.</p>
+
+<p>The result is true if and only if the argument is not null, is a UUID object,
+has the same variant, and contains the same value, bit for bit, as this
+UUID.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$obj</var></dt>
+					<dd><code>object</code><br>$obj</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True if $obj is equal to this UUID<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBytes" id="_getBytes">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBytes">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#229-244" title="Go to source code">getBytes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the UUID as a 16-byte string (containing the six integer fields in
+big-endian byte order)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the UUID as a 16-byte string (containing the six integer fields in
+big-endian byte order)</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClockSeqHiAndReserved" id="_getClockSeqHiAndReserved">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClockSeqHiAndReserved">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#246-255" title="Go to source code">getClockSeqHiAndReserved</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the high field of the clock sequence multiplexed with the variant
+(bits 65-72 of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the high field of the clock sequence multiplexed with the variant
+(bits 65-72 of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Unsigned 8-bit integer value of clock_seq_hi_and_reserved<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClockSeqHiAndReservedHex" id="_getClockSeqHiAndReservedHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClockSeqHiAndReservedHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#257-266" title="Go to source code">getClockSeqHiAndReservedHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the high field of the clock sequence multiplexed with the variant
+(bits 65-72 of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the high field of the clock sequence multiplexed with the variant
+(bits 65-72 of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of clock_seq_hi_and_reserved<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClockSeqLow" id="_getClockSeqLow">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClockSeqLow">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#268-276" title="Go to source code">getClockSeqLow</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the low field of the clock sequence (bits 73-80 of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the low field of the clock sequence (bits 73-80 of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Unsigned 8-bit integer value of clock_seq_low<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClockSeqLowHex" id="_getClockSeqLowHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClockSeqLowHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#278-286" title="Go to source code">getClockSeqLowHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the low field of the clock sequence (bits 73-80 of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the low field of the clock sequence (bits 73-80 of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of clock_seq_low<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClockSequence" id="_getClockSequence">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClockSequence">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#288-308" title="Go to source code">getClockSequence</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the clock sequence value associated with this UUID.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the clock sequence value associated with this UUID.</p>
+
+<p>For UUID version 1, the clock sequence is used to help avoid duplicates that
+could arise when the clock is set backwards in time or if the node ID
+changes.</p>
+
+<p>For UUID version 3 or 5, the clock sequence is a 14-bit value constructed
+from a name as described in RFC 4122, Section 4.3.</p>
+
+<p>For UUID version 4, clock sequence is a randomly or pseudo-randomly generated
+14-bit value as described in RFC 4122, Section 4.4.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Unsigned 14-bit integer value of clock sequence<br />
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://tools.ietf.org/html/rfc4122#section-4.1.5">http://tools.ietf.org/html/rfc4122#section-4.1.5</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClockSequenceHex" id="_getClockSequenceHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClockSequenceHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#310-318" title="Go to source code">getClockSequenceHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the clock sequence value associated with this UUID.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the clock sequence value associated with this UUID.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of clock sequence<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDateTime" id="_getDateTime">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DateTime.html">DateTime</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDateTime">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#320-365" title="Go to source code">getDateTime</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns a PHP DateTime object representing the timestamp associated with this
+UUID.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns a PHP DateTime object representing the timestamp associated with this
+UUID.</p>
+
+<p>The timestamp value is only meaningful in a time-based UUID, which has
+version type 1. If this UUID is not a time-based UUID then this method throws
+UnsupportedOperationException.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DateTime.html">DateTime</a></code></code><br>A PHP DateTime representation of the date<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsupportedOperationException.html">Rhumsaa\Uuid\Exception\UnsupportedOperationException</a></code></code><br>If this UUID is not a version 1 UUID<br />
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsatisfiedDependencyException.html">Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException</a></code></code><br>if called on a 32-bit system and Moontoast\Math\BigNumber is not present<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFields" id="_getFields">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFields">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#367-404" title="Go to source code">getFields</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns an array of the fields of this UUID, with keys named according to the
+RFC 4122 names for the fields.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an array of the fields of this UUID, with keys named according to the
+RFC 4122 names for the fields.</p>
+
+<ul>
+	<li><strong>time_low</strong>: The low field of the timestamp, an unsigned
+	32-bit integer</li>
+
+	<li><strong>time_mid</strong>: The middle field of the timestamp, an unsigned
+	16-bit integer</li>
+
+	<li><strong>time_hi_and_version</strong>: The high field of the timestamp
+	multiplexed with the version number, an unsigned 16-bit integer</li>
+
+	<li><strong>clock_seq_hi_and_reserved</strong>: The high field of the clock
+	sequence multiplexed with the variant, an unsigned 8-bit integer</li>
+
+	<li><strong>clock_seq_low</strong>: The low field of the clock sequence, an
+	unsigned 8-bit integer</li>
+
+	<li><strong>node</strong>: The spatially unique node identifier, an unsigned
+	48-bit integer</li>
+</ul>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The UUID fields represented as integer values<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsatisfiedDependencyException.html">Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException</a></code></code><br>if called on a 32-bit system<br />
+				</div>
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://tools.ietf.org/html/rfc4122#section-4.1.2">http://tools.ietf.org/html/rfc4122#section-4.1.2</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFieldsHex" id="_getFieldsHex">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFieldsHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#406-426" title="Go to source code">getFieldsHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns an array of the fields of this UUID, with keys named according to the
+RFC 4122 names for the fields.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an array of the fields of this UUID, with keys named according to the
+RFC 4122 names for the fields.</p>
+
+<ul>
+	<li><strong>time_low</strong>: The low field of the timestamp, an unsigned
+	32-bit integer</li>
+
+	<li><strong>time_mid</strong>: The middle field of the timestamp, an unsigned
+	16-bit integer</li>
+
+	<li><strong>time_hi_and_version</strong>: The high field of the timestamp
+	multiplexed with the version number, an unsigned 16-bit integer</li>
+
+	<li><strong>clock_seq_hi_and_reserved</strong>: The high field of the clock
+	sequence multiplexed with the variant, an unsigned 8-bit integer</li>
+
+	<li><strong>clock_seq_low</strong>: The low field of the clock sequence, an
+	unsigned 8-bit integer</li>
+
+	<li><strong>node</strong>: The spatially unique node identifier, an unsigned
+	48-bit integer</li>
+</ul>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The UUID fields represented as hexadecimal values<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHex" id="_getHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#428-436" title="Go to source code">getHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the hexadecimal value of the UUID</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the hexadecimal value of the UUID</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInteger" id="_getInteger">
+
+		<td class="attributes"><code>
+			 public 
+			Moontoast\Math\BigNumber
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInteger">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#438-462" title="Go to source code">getInteger</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the integer value of the UUID, represented as a BigNumber</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the integer value of the UUID, represented as a BigNumber</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Moontoast\Math\BigNumber</code><br>BigNumber representation of the unsigned 128-bit integer value<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsatisfiedDependencyException.html">Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException</a></code></code><br>if Moontoast\Math\BigNumber is not present<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLeastSignificantBits" id="_getLeastSignificantBits">
+
+		<td class="attributes"><code>
+			 public 
+			Moontoast\Math\BigNumber
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLeastSignificantBits">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#464-488" title="Go to source code">getLeastSignificantBits</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the least significant 64 bits of this UUID's 128 bit value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the least significant 64 bits of this UUID's 128 bit value</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Moontoast\Math\BigNumber</code><br>BigNumber representation of the unsigned 64-bit integer value<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsatisfiedDependencyException.html">Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException</a></code></code><br>if Moontoast\Math\BigNumber is not present<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLeastSignificantBitsHex" id="_getLeastSignificantBitsHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLeastSignificantBitsHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#490-503" title="Go to source code">getLeastSignificantBitsHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the least significant 64 bits of this UUID's 128 bit value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the least significant 64 bits of this UUID's 128 bit value</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of least significant bits<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMostSignificantBits" id="_getMostSignificantBits">
+
+		<td class="attributes"><code>
+			 public 
+			Moontoast\Math\BigNumber
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMostSignificantBits">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#505-529" title="Go to source code">getMostSignificantBits</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the most significant 64 bits of this UUID's 128 bit value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the most significant 64 bits of this UUID's 128 bit value</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Moontoast\Math\BigNumber</code><br>BigNumber representation of the unsigned 64-bit integer value<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsatisfiedDependencyException.html">Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException</a></code></code><br>if Moontoast\Math\BigNumber is not present<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMostSignificantBitsHex" id="_getMostSignificantBitsHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMostSignificantBitsHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#531-544" title="Go to source code">getMostSignificantBitsHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the most significant 64 bits of this UUID's 128 bit value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the most significant 64 bits of this UUID's 128 bit value</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of most significant bits<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getNode" id="_getNode">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getNode">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#546-583" title="Go to source code">getNode</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the node value associated with this UUID</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the node value associated with this UUID</p>
+
+<p>For UUID version 1, the node field consists of an IEEE 802 MAC address,
+usually the host address. For systems with multiple IEEE 802 addresses, any
+available one can be used. The lowest addressed octet (octet number 10) contains
+the global/local bit and the unicast/multicast bit, and is the first octet of
+the address transmitted on an 802.3 LAN.</p>
+
+<p>For systems with no IEEE address, a randomly or pseudo-randomly generated
+value may be used; see RFC 4122, Section 4.5. The multicast bit must be set in
+such addresses, in order that they will never conflict with addresses obtained
+from network cards.</p>
+
+<p>For UUID version 3 or 5, the node field is a 48-bit value constructed from a
+name as described in RFC 4122, Section 4.3.</p>
+
+<p>For UUID version 4, the node field is a randomly or pseudo-randomly generated
+48-bit value as described in RFC 4122, Section 4.4.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Unsigned 48-bit integer value of node<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsatisfiedDependencyException.html">Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException</a></code></code><br>if called on a 32-bit system<br />
+				</div>
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://tools.ietf.org/html/rfc4122#section-4.1.6">http://tools.ietf.org/html/rfc4122#section-4.1.6</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getNodeHex" id="_getNodeHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getNodeHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#585-612" title="Go to source code">getNodeHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the node value associated with this UUID</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the node value associated with this UUID</p>
+
+<p>For UUID version 1, the node field consists of an IEEE 802 MAC address,
+usually the host address. For systems with multiple IEEE 802 addresses, any
+available one can be used. The lowest addressed octet (octet number 10) contains
+the global/local bit and the unicast/multicast bit, and is the first octet of
+the address transmitted on an 802.3 LAN.</p>
+
+<p>For systems with no IEEE address, a randomly or pseudo-randomly generated
+value may be used; see RFC 4122, Section 4.5. The multicast bit must be set in
+such addresses, in order that they will never conflict with addresses obtained
+from network cards.</p>
+
+<p>For UUID version 3 or 5, the node field is a 48-bit value constructed from a
+name as described in RFC 4122, Section 4.3.</p>
+
+<p>For UUID version 4, the node field is a randomly or pseudo-randomly generated
+48-bit value as described in RFC 4122, Section 4.4.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of node<br />
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://tools.ietf.org/html/rfc4122#section-4.1.6">http://tools.ietf.org/html/rfc4122#section-4.1.6</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimeHiAndVersion" id="_getTimeHiAndVersion">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimeHiAndVersion">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#614-623" title="Go to source code">getTimeHiAndVersion</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the high field of the timestamp multiplexed with the version number
+(bits 49-64 of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the high field of the timestamp multiplexed with the version number
+(bits 49-64 of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Unsigned 16-bit integer value of time_hi_and_version<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimeHiAndVersionHex" id="_getTimeHiAndVersionHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimeHiAndVersionHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#625-634" title="Go to source code">getTimeHiAndVersionHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the high field of the timestamp multiplexed with the version number
+(bits 49-64 of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the high field of the timestamp multiplexed with the version number
+(bits 49-64 of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of time_hi_and_version<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimeLow" id="_getTimeLow">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimeLow">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#636-654" title="Go to source code">getTimeLow</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the low field of the timestamp (the first 32 bits of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the low field of the timestamp (the first 32 bits of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Unsigned 32-bit integer value of time_low<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsatisfiedDependencyException.html">Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException</a></code></code><br>if called on a 32-bit system<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimeLowHex" id="_getTimeLowHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimeLowHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#656-664" title="Go to source code">getTimeLowHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the low field of the timestamp (the first 32 bits of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the low field of the timestamp (the first 32 bits of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of time_low<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimeMid" id="_getTimeMid">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimeMid">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#666-674" title="Go to source code">getTimeMid</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the middle field of the timestamp (bits 33-48 of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the middle field of the timestamp (bits 33-48 of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Unsigned 16-bit integer value of time_mid<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimeMidHex" id="_getTimeMidHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimeMidHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#676-684" title="Go to source code">getTimeMidHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the middle field of the timestamp (bits 33-48 of the UUID).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the middle field of the timestamp (bits 33-48 of the UUID).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of time_mid<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimestamp" id="_getTimestamp">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimestamp">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#686-719" title="Go to source code">getTimestamp</a>( )</code>
+
+		<div class="description short">
+			
+<p>The timestamp value associated with this UUID</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The timestamp value associated with this UUID</p>
+
+<p>The 60 bit timestamp value is constructed from the time_low, time_mid, and
+time_hi fields of this UUID. The resulting timestamp is measured in
+100-nanosecond units since midnight, October 15, 1582 UTC.</p>
+
+<p>The timestamp value is only meaningful in a time-based UUID, which has
+version type 1. If this UUID is not a time-based UUID then this method throws
+UnsupportedOperationException.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Unsigned 60-bit integer value of the timestamp<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsupportedOperationException.html">Rhumsaa\Uuid\Exception\UnsupportedOperationException</a></code></code><br>If this UUID is not a version 1 UUID<br />
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsatisfiedDependencyException.html">Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException</a></code></code><br>if called on a 32-bit system<br />
+				</div>
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://tools.ietf.org/html/rfc4122#section-4.1.4">http://tools.ietf.org/html/rfc4122#section-4.1.4</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimestampHex" id="_getTimestampHex">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimestampHex">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#721-749" title="Go to source code">getTimestampHex</a>( )</code>
+
+		<div class="description short">
+			
+<p>The timestamp value associated with this UUID</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The timestamp value associated with this UUID</p>
+
+<p>The 60 bit timestamp value is constructed from the time_low, time_mid, and
+time_hi fields of this UUID. The resulting timestamp is measured in
+100-nanosecond units since midnight, October 15, 1582 UTC.</p>
+
+<p>The timestamp value is only meaningful in a time-based UUID, which has
+version type 1. If this UUID is not a time-based UUID then this method throws
+UnsupportedOperationException.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Hexadecimal value of the timestamp<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsupportedOperationException.html">Rhumsaa\Uuid\Exception\UnsupportedOperationException</a></code></code><br>If this UUID is not a version 1 UUID<br />
+				</div>
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://tools.ietf.org/html/rfc4122#section-4.1.4">http://tools.ietf.org/html/rfc4122#section-4.1.4</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUrn" id="_getUrn">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUrn">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#751-760" title="Go to source code">getUrn</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the string representation of the UUID as a URN.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the string representation of the UUID as a URN.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://en.wikipedia.org/wiki/Uniform_Resource_Name">http://en.wikipedia.org/wiki/Uniform_Resource_Name</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVariant" id="_getVariant">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVariant">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#762-790" title="Go to source code">getVariant</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the variant number associated with this UUID.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the variant number associated with this UUID.</p>
+
+<p>The variant number describes the layout of the UUID. The variant number has
+the following meaning:</p>
+
+<ul>
+	<li>0 - Reserved for NCS backward compatibility</li>
+
+	<li>2 - The RFC 4122 variant (used by this class)</li>
+
+	<li>6 - Reserved, Microsoft Corporation backward compatibility</li>
+
+	<li>7 - Reserved for future definition</li>
+</ul>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://tools.ietf.org/html/rfc4122#section-4.1.1">http://tools.ietf.org/html/rfc4122#section-4.1.1</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVersion" id="_getVersion">
+
+		<td class="attributes"><code>
+			 public 
+			integer|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVersion">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#792-817" title="Go to source code">getVersion</a>( )</code>
+
+		<div class="description short">
+			
+<p>The version number associated with this UUID. The version number describes
+how this UUID was generated.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The version number associated with this UUID. The version number describes
+how this UUID was generated.</p>
+
+<p>The version number has the following meaning:</p>
+
+<ul>
+	<li>1 - Time-based UUID</li>
+
+	<li>2 - DCE security UUID</li>
+
+	<li>3 - Name-based UUID hashed with MD5</li>
+
+	<li>4 - Randomly generated UUID</li>
+
+	<li>5 - Name-based UUID hashed with SHA-1</li>
+</ul>
+
+<p>Returns null if this UUID is not an RFC 4122 variant, since version is only
+meaningful for this variant.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer|null</code><br />
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://tools.ietf.org/html/rfc4122#section-4.1.3">http://tools.ietf.org/html/rfc4122#section-4.1.3</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toString" id="_toString">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_toString">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#819-830" title="Go to source code">toString</a>( )</code>
+
+		<div class="description short">
+			
+<p>Converts this UUID into a string representation</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Converts this UUID into a string representation</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fromBytes" id="_fromBytes">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fromBytes">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#832-855" title="Go to source code">fromBytes</a>( <span>string <var>$bytes</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates a UUID from a byte string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates a UUID from a byte string.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bytes</var></dt>
+					<dd><code>string</code><br>$bytes</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>If the $bytes string does not contain 16 characters<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fromString" id="_fromString">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fromString">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#857-895" title="Go to source code">fromString</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates a UUID from the string standard representation as described in the
+toString() method.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates a UUID from the string standard representation as described in the
+toString() method.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name A string that specifies a UUID</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>If the $name isn't a valid UUID<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isValid" id="_isValid">
+
+		<td class="attributes"><code>
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isValid">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#897-915" title="Go to source code">isValid</a>( <span>string <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if a string is a valid uuid</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if a string is a valid uuid</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd><code>string</code><br>$uuid The uuid to test</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="uuid1" id="_uuid1">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_uuid1">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#917-989" title="Go to source code">uuid1</a>( <span>integer|string <var>$node</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$clockSeq</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generate a version 1 UUID from a host ID, sequence number, and the current
+time. If $node is not given, we will attempt to obtain the local hardware
+address. If $clockSeq is given, it is used as the sequence number; otherwise a
+random 14-bit sequence number is chosen.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate a version 1 UUID from a host ID, sequence number, and the current
+time. If $node is not given, we will attempt to obtain the local hardware
+address. If $clockSeq is given, it is used as the sequence number; otherwise a
+random 14-bit sequence number is chosen.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$node</var></dt>
+					<dd><code>integer|string</code><br>$node A 48-bit number representing the hardware address. This number may be
+represented as an integer or a hexadecimal string.</dd>
+					<dt><var>$clockSeq</var></dt>
+					<dd><code>integer</code><br>$clockSeq A 14-bit number used to help avoid duplicates that could arise when
+the clock is set backwards in time or if the node ID changes.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>if the $node is invalid<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="uuid3" id="_uuid3">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_uuid3">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#991-1008" title="Go to source code">uuid3</a>( <span><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>|string <var>$ns</var></span>, <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Generate a version 3 UUID based on the MD5 hash of a namespace identifier
+(which is a UUID) and a name (which is a string).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate a version 3 UUID based on the MD5 hash of a namespace identifier
+(which is a UUID) and a name (which is a string).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ns</var></dt>
+					<dd><code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>|string</code><br>$ns The UUID namespace in which to create the named UUID</dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name The name to create a UUID for</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="uuid4" id="_uuid4">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_uuid4">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#1010-1024" title="Go to source code">uuid4</a>( )</code>
+
+		<div class="description short">
+			
+<p>Generate a version 4 (random) UUID.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate a version 4 (random) UUID.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="uuid5" id="_uuid5">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_uuid5">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#1026-1043" title="Go to source code">uuid5</a>( <span><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>|string <var>$ns</var></span>, <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Generate a version 5 UUID based on the SHA-1 hash of a namespace identifier
+(which is a UUID) and a name (which is a string).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate a version 5 UUID based on the SHA-1 hash of a namespace identifier
+(which is a UUID) and a name (which is a string).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ns</var></dt>
+					<dd><code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>|string</code><br>$ns The UUID namespace in which to create the named UUID</dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name The name to create a UUID for</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="calculateUuidTime" id="_calculateUuidTime">
+
+		<td class="attributes"><code>
+			 protected static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_calculateUuidTime">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#1045-1099" title="Go to source code">calculateUuidTime</a>( <span>integer <var>$sec</var></span>, <span>integer <var>$usec</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Calculates the UUID time fields from a UNIX timestamp</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculates the UUID time fields from a UNIX timestamp</p>
+
+<p>UUID time is a 60-bit time value as a count of 100-nanosecond intervals since
+00:00:00.00, 15 October 1582.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sec</var></dt>
+					<dd><code>integer</code><br>$sec Seconds since the Unix Epoch</dd>
+					<dt><var>$usec</var></dt>
+					<dd><code>integer</code><br>$usec Microseconds</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Exception.UnsatisfiedDependencyException.html">Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException</a></code></code><br>if called on a 32-bit system and Moontoast\Math\BigNumber is not present<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIfconfig" id="_getIfconfig">
+
+		<td class="attributes"><code>
+			 protected static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIfconfig">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#1101-1124" title="Go to source code">getIfconfig</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the network interface configuration for the system</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the network interface configuration for the system</p>
+
+
+
+
+
+
+				<h4>Todo</h4>
+				<div class="list">
+						Needs evaluation and possibly modification to ensure this works well across
+multiple platforms.<br />
+				</div>
+				<h4>CodeCoverageIgnore</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getNodeFromSystem" id="_getNodeFromSystem">
+
+		<td class="attributes"><code>
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getNodeFromSystem">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#1126-1151" title="Go to source code">getNodeFromSystem</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the hardware address as a 48-bit positive integer. If all attempts to
+obtain the hardware address fail, we choose a random 48-bit number with its
+eighth bit set to 1 as recommended in RFC 4122. "Hardware address" means the MAC
+address of a network interface, and on a machine with multiple network
+interfaces the MAC address of any one of them may be returned.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the hardware address as a 48-bit positive integer. If all attempts to
+obtain the hardware address fail, we choose a random 48-bit number with its
+eighth bit set to 1 as recommended in RFC 4122. "Hardware address" means the MAC
+address of a network interface, and on a machine with multiple network
+interfaces the MAC address of any one of them may be returned.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasBigNumber" id="_hasBigNumber">
+
+		<td class="attributes"><code>
+			 protected static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasBigNumber">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#1153-1161" title="Go to source code">hasBigNumber</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns true if the system has Moontoast\Math\BigNumber</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns true if the system has Moontoast\Math\BigNumber</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasOpensslRandomPseudoBytes" id="_hasOpensslRandomPseudoBytes">
+
+		<td class="attributes"><code>
+			 protected static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasOpensslRandomPseudoBytes">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#1163-1171" title="Go to source code">hasOpensslRandomPseudoBytes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns true if the system has openssl_random_pseudo_bytes()</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns true if the system has openssl_random_pseudo_bytes()</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="is64BitSystem" id="_is64BitSystem">
+
+		<td class="attributes"><code>
+			 protected static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_is64BitSystem">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#1173-1181" title="Go to source code">is64BitSystem</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns true if the system is 64-bit, false otherwise</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns true if the system is 64-bit, false otherwise</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="uuidFromHashedName" id="_uuidFromHashedName">
+
+		<td class="attributes"><code>
+			 protected static
+			<code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_uuidFromHashedName">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Uuid.html#1183-1213" title="Go to source code">uuidFromHashedName</a>( <span>string <var>$hash</var></span>, <span>integer <var>$version</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns a version 3 or 5 UUID based on the hash (md5 or sha1) of a namespace
+identifier (which is a UUID) and a name (which is a string)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns a version 3 or 5 UUID based on the hash (md5 or sha1) of a namespace
+identifier (which is a UUID) and a name (which is a string)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$hash</var></dt>
+					<dd><code>string</code><br>$hash The hash to use when creating the UUID</dd>
+					<dt><var>$version</var></dt>
+					<dd><code>integer</code><br>$version The UUID version to be generated</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="NAMESPACE_DNS" id="NAMESPACE_DNS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#34-38" title="Go to source code"><b>NAMESPACE_DNS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'6ba7b810-9dad-11d1-80b4-00c04fd430c8'</span></code></td>
+		<td class="description"><div>
+			<a href="#NAMESPACE_DNS" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>When this namespace is specified, the name string is a fully-qualified domain
+name.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>When this namespace is specified, the name string is a fully-qualified domain
+name.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://tools.ietf.org/html/rfc4122#appendix-C">http://tools.ietf.org/html/rfc4122#appendix-C</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="NAMESPACE_URL" id="NAMESPACE_URL">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#40-44" title="Go to source code"><b>NAMESPACE_URL</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'6ba7b811-9dad-11d1-80b4-00c04fd430c8'</span></code></td>
+		<td class="description"><div>
+			<a href="#NAMESPACE_URL" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>When this namespace is specified, the name string is a URL.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>When this namespace is specified, the name string is a URL.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://tools.ietf.org/html/rfc4122#appendix-C">http://tools.ietf.org/html/rfc4122#appendix-C</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="NAMESPACE_OID" id="NAMESPACE_OID">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#46-50" title="Go to source code"><b>NAMESPACE_OID</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'6ba7b812-9dad-11d1-80b4-00c04fd430c8'</span></code></td>
+		<td class="description"><div>
+			<a href="#NAMESPACE_OID" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>When this namespace is specified, the name string is an ISO OID.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>When this namespace is specified, the name string is an ISO OID.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://tools.ietf.org/html/rfc4122#appendix-C">http://tools.ietf.org/html/rfc4122#appendix-C</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="NAMESPACE_X500" id="NAMESPACE_X500">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#52-56" title="Go to source code"><b>NAMESPACE_X500</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'6ba7b814-9dad-11d1-80b4-00c04fd430c8'</span></code></td>
+		<td class="description"><div>
+			<a href="#NAMESPACE_X500" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>When this namespace is specified, the name string is an X.500 DN in DER or a
+text output format.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>When this namespace is specified, the name string is an X.500 DN in DER or a
+text output format.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://tools.ietf.org/html/rfc4122#appendix-C">http://tools.ietf.org/html/rfc4122#appendix-C</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="NIL" id="NIL">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#58-62" title="Go to source code"><b>NIL</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'00000000-0000-0000-0000-000000000000'</span></code></td>
+		<td class="description"><div>
+			<a href="#NIL" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The nil UUID is special form of UUID that is specified to have all 128 bits
+set to zero.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The nil UUID is special form of UUID that is specified to have all 128 bits
+set to zero.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://tools.ietf.org/html/rfc4122#section-4.1.7">http://tools.ietf.org/html/rfc4122#section-4.1.7</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="RESERVED_NCS" id="RESERVED_NCS">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#64-68" title="Go to source code"><b>RESERVED_NCS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">0</span></code></td>
+		<td class="description"><div>
+			<a href="#RESERVED_NCS" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Reserved for NCS compatibility.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Reserved for NCS compatibility.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://tools.ietf.org/html/rfc4122#section-4.1.1">http://tools.ietf.org/html/rfc4122#section-4.1.1</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="RFC_4122" id="RFC_4122">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#70-74" title="Go to source code"><b>RFC_4122</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">2</span></code></td>
+		<td class="description"><div>
+			<a href="#RFC_4122" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Specifies the UUID layout given in RFC 4122.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Specifies the UUID layout given in RFC 4122.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://tools.ietf.org/html/rfc4122#section-4.1.1">http://tools.ietf.org/html/rfc4122#section-4.1.1</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="RESERVED_MICROSOFT" id="RESERVED_MICROSOFT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#76-80" title="Go to source code"><b>RESERVED_MICROSOFT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">6</span></code></td>
+		<td class="description"><div>
+			<a href="#RESERVED_MICROSOFT" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Reserved for Microsoft compatibility.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Reserved for Microsoft compatibility.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://tools.ietf.org/html/rfc4122#section-4.1.1">http://tools.ietf.org/html/rfc4122#section-4.1.1</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="RESERVED_FUTURE" id="RESERVED_FUTURE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#82-86" title="Go to source code"><b>RESERVED_FUTURE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">7</span></code></td>
+		<td class="description"><div>
+			<a href="#RESERVED_FUTURE" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Reserved for future definition.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Reserved for future definition.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://tools.ietf.org/html/rfc4122#section-4.1.1">http://tools.ietf.org/html/rfc4122#section-4.1.1</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="VALID_PATTERN" id="VALID_PATTERN">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#88-91" title="Go to source code"><b>VALID_PATTERN</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$'</span></code></td>
+		<td class="description"><div>
+			<a href="#VALID_PATTERN" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Regular expression pattern for matching a valid UUID of any variant.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Regular expression pattern for matching a valid UUID of any variant.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="VERSION" id="VERSION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#93-96" title="Go to source code"><b>VERSION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'2.7.3'</span></code></td>
+		<td class="description"><div>
+			<a href="#VERSION" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Version of the Rhumsaa\Uuid package</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Version of the Rhumsaa\Uuid package</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="force32Bit" id="$force32Bit">
+		<td class="attributes"><code>
+			public static 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#98-103" title="Go to source code"><var>$force32Bit</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$force32Bit" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>For testing, 64-bit system override; if true, treat the system as 32-bit</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>For testing, 64-bit system override; if true, treat the system as 32-bit</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="forceNoBigNumber" id="$forceNoBigNumber">
+		<td class="attributes"><code>
+			public static 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#105-111" title="Go to source code"><var>$forceNoBigNumber</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$forceNoBigNumber" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>For testing, Moontoast\Math\BigNumber override; if true, treat as if
+BigNumber is not available</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>For testing, Moontoast\Math\BigNumber override; if true, treat as if
+BigNumber is not available</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="forceNoOpensslRandomPseudoBytes" id="$forceNoOpensslRandomPseudoBytes">
+		<td class="attributes"><code>
+			public static 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#113-119" title="Go to source code"><var>$forceNoOpensslRandomPseudoBytes</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$forceNoOpensslRandomPseudoBytes" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>For testing, openssl_random_pseudo_bytes() override; if true, treat as if
+openssl_random_pseudo_bytes() is not available</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>For testing, openssl_random_pseudo_bytes() override; if true, treat as if
+openssl_random_pseudo_bytes() is not available</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="timeOfDayTest" id="$timeOfDayTest">
+		<td class="attributes"><code>
+			public static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#121-126" title="Go to source code"><var>$timeOfDayTest</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$timeOfDayTest" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>For testing, sets time of day to a static, known value</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>For testing, sets time of day to a static, known value</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="ignoreSystemNode" id="$ignoreSystemNode">
+		<td class="attributes"><code>
+			public static 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#128-133" title="Go to source code"><var>$ignoreSystemNode</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$ignoreSystemNode" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>For testing, system override to ignore generating node from hardware</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>For testing, system override to ignore generating node from hardware</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="fields" id="$fields">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Rhumsaa.Uuid.Uuid.html#135-150" title="Go to source code"><var>$fields</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+    <span class="php-quote">'time_low'</span> =&gt; <span class="php-quote">'00000000'</span>,
+    <span class="php-quote">'time_mid'</span> =&gt; <span class="php-quote">'0000'</span>,
+    <span class="php-quote">'time_hi_and_version'</span> =&gt; <span class="php-quote">'0000'</span>,
+    <span class="php-quote">'clock_seq_hi_and_reserved'</span> =&gt; <span class="php-quote">'00'</span>,
+    <span class="php-quote">'clock_seq_low'</span> =&gt; <span class="php-quote">'00'</span>,
+    <span class="php-quote">'node'</span> =&gt; <span class="php-quote">'000000000000'</span>,
+)</code></td>
+		<td class="description"><div>
+			<a href="#$fields" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The fields that make up this UUID</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The fields that make up this UUID</p>
+
+<p>This is initialized to the nil value.</p>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							Rhumsaa.Uuid.Uuid.html#method_getFields<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Rhumsaa\Uuid API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

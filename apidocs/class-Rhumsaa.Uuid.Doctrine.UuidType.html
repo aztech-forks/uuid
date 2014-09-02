@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Rhumsaa\Uuid\Doctrine\UuidType | Rhumsaa\Uuid</title>
+
+	<script type="text/javascript" src="resources/combined.js?2003274015"></script>
+	<script type="text/javascript" src="elementlist.js?1610031137"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Rhumsaa.html">Rhumsaa<span></span></a>
+						<ul>
+				<li class="active main"><a href="namespace-Rhumsaa.Uuid.html">Uuid<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Console.html">Console<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Console.Command.html">Command</a>
+						</li>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Console.Util.html">Util</a>
+						</li>
+							</ul></li>
+				<li class="active main"><a href="namespace-Rhumsaa.Uuid.Doctrine.html">Doctrine</a>
+						</li>
+				<li class="main"><a href="namespace-Rhumsaa.Uuid.Exception.html">Exception</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Rhumsaa.Uuid.Doctrine.UuidType.html">UuidType</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Rhumsaa.Uuid.Doctrine.html" title="Summary of Rhumsaa\Uuid\Doctrine"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class UuidType</h1>
+
+
+	<div class="description">
+	
+<p>Field type mapping for the Doctrine Database Abstraction Layer (DBAL).</p>
+
+<p>UUID fields will be stored as a string in the database and converted back to
+the Uuid value object when querying.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Doctrine\DBAL\Types\Type
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Rhumsaa\Uuid\Doctrine\UuidType</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Rhumsaa.html">Rhumsaa</a>\<a href="namespace-Rhumsaa.Uuid.html">Uuid</a>\<a href="namespace-Rhumsaa.Uuid.Doctrine.html">Doctrine</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Rhumsaa.Uuid.Doctrine.UuidType.html#20-104" title="Go to source code">Doctrine/UuidType.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getSQLDeclaration" id="_getSQLDeclaration">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSQLDeclaration">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Doctrine.UuidType.html#33-42" title="Go to source code">getSQLDeclaration</a>( <span>array <var>$fieldDeclaration</var></span>, <span>Doctrine\DBAL\Platforms\AbstractPlatform <var>$platform</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fieldDeclaration</var></dt>
+					<dd><code>array</code><br>$fieldDeclaration</dd>
+					<dt><var>$platform</var></dt>
+					<dd><code>Doctrine\DBAL\Platforms\AbstractPlatform</code><br>$platform</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="convertToPHPValue" id="_convertToPHPValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_convertToPHPValue">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Doctrine.UuidType.html#44-63" title="Go to source code">convertToPHPValue</a>( <span>string|null <var>$value</var></span>, <span>Doctrine\DBAL\Platforms\AbstractPlatform <var>$platform</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string|null</code><br>$value</dd>
+					<dt><var>$platform</var></dt>
+					<dd><code>Doctrine\DBAL\Platforms\AbstractPlatform</code><br>$platform</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="convertToDatabaseValue" id="_convertToDatabaseValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_convertToDatabaseValue">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Doctrine.UuidType.html#65-82" title="Go to source code">convertToDatabaseValue</a>( <span><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>|null <var>$value</var></span>, <span>Doctrine\DBAL\Platforms\AbstractPlatform <var>$platform</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code><code><a href="class-Rhumsaa.Uuid.Uuid.html">Rhumsaa\Uuid\Uuid</a></code>|null</code><br>$value</dd>
+					<dt><var>$platform</var></dt>
+					<dd><code>Doctrine\DBAL\Platforms\AbstractPlatform</code><br>$platform</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Doctrine.UuidType.html#84-92" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="requiresSQLCommentHint" id="_requiresSQLCommentHint">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_requiresSQLCommentHint">#</a>
+		<code><a href="source-class-Rhumsaa.Uuid.Doctrine.UuidType.html#94-103" title="Go to source code">requiresSQLCommentHint</a>( <span>Doctrine\DBAL\Platforms\AbstractPlatform <var>$platform</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$platform</var></dt>
+					<dd><code>Doctrine\DBAL\Platforms\AbstractPlatform</code><br>$platform</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="NAME" id="NAME">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Rhumsaa.Uuid.Doctrine.UuidType.html#28-31" title="Go to source code"><b>NAME</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'uuid'</span></code></td>
+		<td class="description"><div>
+			<a href="#NAME" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Rhumsaa\Uuid API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
