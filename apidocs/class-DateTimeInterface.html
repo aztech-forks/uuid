@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class ErrorException | Rhumsaa\Uuid</title>
+	<title>Interface DateTimeInterface | Rhumsaa\Uuid</title>
 
 	<link rel="stylesheet" href="resources/style.css?1648332946">
 
@@ -50,13 +50,13 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-DateTimeInterface.html">DateTimeInterface</a></li>
+				<li class="active"><a href="class-DateTimeInterface.html">DateTimeInterface</a></li>
 			</ul>
 
 
 			<h3>Exceptions</h3>
 			<ul>
-				<li class="active"><a href="class-ErrorException.html">ErrorException</a></li>
+				<li><a href="class-ErrorException.html">ErrorException</a></li>
 				<li><a href="class-Exception.html">Exception</a></li>
 				<li><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></li>
 				<li><a href="class-LogicException.html">LogicException</a></li>
@@ -105,7 +105,7 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class ErrorException</h1>
+	<h1>Interface DateTimeInterface</h1>
 
 
 	<div class="description">
@@ -113,42 +113,32 @@
 
 	</div>
 
-	<dl class="tree">
-		<dd style="padding-left:0px">
-			<a href="class-Exception.html"><span>Exception</span></a>
-			
-			
-			
-		</dd>
-		<dd style="padding-left:30px">
-			<img src="resources/inherit.png" alt="Extended by">
-<b><span>ErrorException</span></b>			
-			
-			
-		</dd>
-	</dl>
 
 
 
 
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-DateTime.html">DateTime</a>
+	</div>
 
 
 
 
 	<div class="info">
 		
-		<b>PHP Extension:</b> <a href="http://php.net/manual" title="Go to PHP documentation">Core</a><br>
+		<b>PHP Extension:</b> <a href="http://php.net/manual/book.datetime.php" title="Go to PHP documentation">Date</a><br>
 		
 		
 
-		<b>Documented at</b> <a href="http://php.net/manual/class.errorexception.php" title="Go to PHP documentation">php.net</a><br>
+		<b>Documented at</b> <a href="http://php.net/manual/class.datetimeinterface.php" title="Go to PHP documentation">php.net</a><br>
 	</div>
 
 
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+	<tr data-order="format" id="_format">
 
 		<td class="attributes"><code>
 			 public 
@@ -159,8 +149,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="http://php.net/manual/errorexception.construct.php" title="Go to PHP documentation">__construct</a>( <span>mixed <var>$message</var></span>, <span>mixed <var>$code</var></span>, <span>mixed <var>$severity</var></span>, <span>mixed <var>$filename</var></span>, <span>mixed <var>$lineno</var></span>, <span>mixed <var>$previous</var></span> )</code>
+		<a class="anchor" href="#_format">#</a>
+		<code><a href="http://php.net/manual/datetimeinterface.format.php" title="Go to PHP documentation">format</a>( <span>mixed <var>$format</var></span> )</code>
 
 		<div class="description short">
 			
@@ -176,16 +166,14 @@
 
 
 
-				<h4>Overrides</h4>
-				<div class="list"><code><a href="class-Exception.html#___construct">Exception::__construct()</a></code></div>
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getSeverity" id="_getSeverity">
+	<tr data-order="getTimezone" id="_getTimezone">
 
 		<td class="attributes"><code>
-			final public 
+			 public 
 
 			
 			
@@ -193,8 +181,136 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getSeverity">#</a>
-		<code><a href="http://php.net/manual/errorexception.getseverity.php" title="Go to PHP documentation">getSeverity</a>( )</code>
+		<a class="anchor" href="#_getTimezone">#</a>
+		<code><a href="http://php.net/manual/datetimeinterface.gettimezone.php" title="Go to PHP documentation">getTimezone</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOffset" id="_getOffset">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOffset">#</a>
+		<code><a href="http://php.net/manual/datetimeinterface.getoffset.php" title="Go to PHP documentation">getOffset</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimestamp" id="_getTimestamp">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimestamp">#</a>
+		<code><a href="http://php.net/manual/datetimeinterface.gettimestamp.php" title="Go to PHP documentation">getTimestamp</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="diff" id="_diff">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_diff">#</a>
+		<code><a href="http://php.net/manual/datetimeinterface.diff.php" title="Go to PHP documentation">diff</a>( <span>mixed <var>$object</var></span>, <span>mixed <var>$absolute</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__wakeup" id="___wakeup">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___wakeup">#</a>
+		<code><a href="http://php.net/manual/datetimeinterface.wakeup.php" title="Go to PHP documentation">__wakeup</a>( )</code>
 
 		<div class="description short">
 			
@@ -216,21 +332,6 @@
 	</tr>
 	</table>
 
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Exception.html#methods">Exception</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Exception.html#___toString">__toString()</a>, 
-			<a href="class-Exception.html#_getCode">getCode()</a>, 
-			<a href="class-Exception.html#_getFile">getFile()</a>, 
-			<a href="class-Exception.html#_getLine">getLine()</a>, 
-			<a href="class-Exception.html#_getMessage">getMessage()</a>, 
-			<a href="class-Exception.html#_getPrevious">getPrevious()</a>, 
-			<a href="class-Exception.html#_getTrace">getTrace()</a>, 
-			<a href="class-Exception.html#_getTraceAsString">getTraceAsString()</a>
-		</code></td>
-	</tr>
-	</table>
 
 
 
@@ -242,48 +343,7 @@
 
 
 
-	<table class="summary properties" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="severity" id="$severity">
-		<td class="attributes"><code>
-			protected  
-			integer
-		</code></td>
 
-		<td class="name">
-				<a href="http://php.net/manual/class.errorexception.php#errorexception.props.severity" title="Go to PHP documentation"><var>$severity</var></a>
-
-			<div class="description short">
-				
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$severity" class="anchor">#</a>
-				<code><span class="php-num">1</span></code>
-			</div>
-		</td>
-	</tr>
-	</table>
-
-	<table class="summary inherited">
-	<caption>Properties inherited from <a href="class-Exception.html#properties">Exception</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Exception.html#$code"><var>$code</var></a>, 
-			<a href="class-Exception.html#$file"><var>$file</var></a>, 
-			<a href="class-Exception.html#$line"><var>$line</var></a>, 
-			<a href="class-Exception.html#$message"><var>$message</var></a>
-		</code></td>
-	</tr>
-	</table>
 
 
 
