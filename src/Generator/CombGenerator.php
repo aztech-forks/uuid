@@ -24,6 +24,18 @@ use Ramsey\Uuid\Converter\NumberConverterInterface;
  */
 class CombGenerator implements RandomGeneratorInterface
 {
+
+    const MODE_MSSQL = 0;
+
+    const MODE_BINARY = 1;
+
+    const MODE_STRING = 2;
+
+    /**
+     * @var int
+     */
+    private $combMode = 0;
+
     /**
      * @var RandomGeneratorInterface
      */
@@ -44,12 +56,21 @@ class CombGenerator implements RandomGeneratorInterface
      *
      * @param RandomGeneratorInterface $generator Random-number generator for the non-time part.
      * @param NumberConverterInterface $numberConverter Instance of number converter.
+     * @param int $combMode
      */
-    public function __construct(RandomGeneratorInterface $generator, NumberConverterInterface $numberConverter)
-    {
+    public function __construct(
+        RandomGeneratorInterface $generator,
+        NumberConverterInterface $numberConverter,
+        $combMode = 0
+    ) {
+        if ($combMode < 0 || $combMode > 2) {
+            throw new \InvalidArgumentException('Invalid comb mode, must be one of the MODE_ constants.');
+        }
+
         $this->converter = $numberConverter;
         $this->randomGenerator = $generator;
         $this->timestampBytes = 6;
+        $this->combMode = (int) $combMode;
     }
 
     /**
@@ -76,7 +97,12 @@ class CombGenerator implements RandomGeneratorInterface
             $lsbTime = substr($lsbTime, 0 - ($this->timestampBytes * 2));
         }
 
-        return hex2bin(str_pad(bin2hex($hash), $length - $this->timestampBytes, '0')) . hex2bin($lsbTime);
+        switch ($this->combMode) {
+            case self::MODE_STRING:
+                return hex2bin($lsbTime) . hex2bin(str_pad(bin2hex($hash), $length - $this->timestampBytes, '0'));
+            default:
+                return hex2bin(str_pad(bin2hex($hash), $length - $this->timestampBytes, '0')) . hex2bin($lsbTime);
+        }
     }
 
     /**
